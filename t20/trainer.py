@@ -56,8 +56,8 @@ def convert(tar_file):
     return df
 
 def train():
-    dataset = pd.read_csv("t20\\data\\all_matches.csv")
-    df = convert("t20\\data\\all_matches.csv") 
+    dataset = pd.read_csv("all_matches.csv")
+    df = convert("all_matches.csv") 
     y = df.iloc[:,[3]].values  
     X = df.iloc[:,[11]].values
     count_row = y.shape[0]
@@ -77,5 +77,3 @@ def train():
     df.insert(1,"",tot_6,allow_duplicates=True)
     df.dropna()
     df.to_csv('testCase-1.csv',encoding='utf-8',mode='w')
-
-# train()    
