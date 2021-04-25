@@ -1,4 +1,4 @@
 from predictor import predictRuns
 
-runs = predictRuns('t20\\data\\inputFile.csv')
+runs = predictRuns('inputFile.csv')
 print("Predicted Runs: ", runs)
